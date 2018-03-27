@@ -1,0 +1,31 @@
+package program51;
+public class Program51 {
+public static void main(String[] args) {
+                x x1=new x();
+         int y;
+        y = x1.reverse(45678);
+        System.out.println(" reversed number is "+y);
+        }
+   }
+interface Interfacex{
+    int c=10;
+    int reverse(int num);
+    }
+class x implements Interfacex
+{
+    int digit,sum=0;
+    @Override
+     public int reverse(int num){
+        while(num>0)
+        {
+    	digit=num%10;
+            sum=sum*10+digit;
+            num=num/10;
+               }
+        return sum;
+    }
+}
+Output:
+run:
+ reversed number is 87654
+BUILD SUCCESSFUL (total time: 0 seconds)
